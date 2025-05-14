@@ -2,10 +2,21 @@ import { Link } from "react-router";
 import TheFooter from "~/components/TheFooter";
 import { Play } from "lucide-react";
 
+export function meta() {
+  return [
+    { title: "ScreenCapture" },
+    {
+      name: "description",
+      content:
+        "Record your screen with just a few clicks. No downloads, no installations, just a simple web app that makes screen recording effortless.",
+    },
+  ];
+}
+
 export default function Home() {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-center px-4 pt-24">
+      <div className="flex flex-1 flex-col items-center justify-center px-4 pt-24">
         <div className="mx-auto max-w-4xl text-center">
           <div className="animate-fade-in relative mx-auto mb-8 h-20 w-20">
             <div className="from-primary to-secondary absolute inset-0 animate-pulse rounded-full bg-gradient-to-br opacity-20"></div>

@@ -34,7 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="from-background to-muted bg-gradient-to-b">
-        <div className="min-h-screen">
+        <div className="flex min-h-screen flex-col">
           <TheNavbar />
           {children}
         </div>
