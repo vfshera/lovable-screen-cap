@@ -1,7 +1,7 @@
 import pluginJs from "@eslint/js";
 import teslintParser from "@typescript-eslint/parser";
 import eslintConfigPrettier from "eslint-config-prettier";
-import eslintPluginImportX from "eslint-plugin-import-x";
+import * as eslintPluginImportX from "eslint-plugin-import-x";
 import reactPlugin from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import globals from "globals";
