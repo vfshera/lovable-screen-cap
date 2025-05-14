@@ -9,7 +9,7 @@ import {
 } from "react-router";
 import "./app.css";
 import TheNavbar from "./components/TheNavbar";
-import { Analytics } from "@vercel/analytics/remix";
+import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "sonner";
 
 export const links: Route.LinksFunction = () => [
