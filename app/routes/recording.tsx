@@ -48,7 +48,6 @@ export default function Recording() {
 
       const stream = await navigator.mediaDevices.getDisplayMedia({
         video: {
-          // Remove cursor property as it's not a valid MediaTrackConstraints property
           displaySurface: "monitor",
         },
         audio: true,
