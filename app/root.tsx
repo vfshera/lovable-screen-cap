@@ -9,6 +9,7 @@ import {
 } from "react-router";
 import "./app.css";
 import TheNavbar from "./components/TheNavbar";
+import { Analytics } from "@vercel/analytics/next";
 import { Toaster } from "sonner";
 
 export const links: Route.LinksFunction = () => [
@@ -41,6 +42,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Toaster />
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );
